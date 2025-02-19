@@ -41,7 +41,6 @@ func main() {
 	router := httprouter.New()
 	router.GET("/", Index)
 	router.GET("/hello/:name", Hello)
-
 	router.GET("/user/:uid", getuser)
 	router.POST("/adduser/:uid", adduser)
 	router.DELETE("/deluser/:uid", deleteuser)
